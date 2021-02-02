@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>行動商務與系統設計</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+<style>
+    body{
+        background-color:rgb(37, 27, 2);
+    }
+    hr{
+        border-width:5px;
+        border-color:rgb(253, 236, 2);
+
+    }
+    figure{
+        border: 1px solid chocolate;
+        background-color: chocolate;
+        width: 400px;
+        float: left;
+        margin-bottom: 100px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    figcaption{
+        font-size: 0.8em;
+        text-align: center;
+        font-weight: normal; 
+        line-height: normal;
+    }
+    figure > img{
+        padding: 10px ;
+        width:100%;
+      
+    }
+    figure > img:hover{
+        position: fixed;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #sidebar-wrapper{
+        position: fixed;
+        bottom: 0px;
+        width: 250px;
+        height: 30px;
+        overflow: hidden;
+        font-size: 0.6em;
+        border-radius: 30px;
+        background-color:rgb(37, 27, 2);
+
+    }
+    #sidebar-wrapper:hover{
+        
+        line-height: 1.5em;
+        font-size: 1.3em;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        background-color: chocolate;
+        border: 2px solid rgb(99, 90, 13);
+    }
+    .sidebar-nav li a{
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+    }
+    .sidebar-nav li{
+        width: 100px;
+        height: 100px;
+        border: 2px solid wheat;
+    }
+    .sidebar-nav:hover{
+        padding: 10px;
+        line-height: 1.5em;
+       
+        font-size: 1.3em;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        border: 2px solid rgb(197, 194, 171);
+    }
+    #page-content-wrapper1 a{
+        color: aliceblue;
+        text-decoration: none;
+        background-color:rgb(37, 27, 2); 
+       
+    }
+    #page-content-wrapper1 a:hover{
+        
+        color: rgb(238, 217, 27);
+        text-decoration: none;
+        font-size: 1.3em;
+
+    }
+    #page-content-wrapper1{
+        
+        position: absolute;
+        line-height: 2em;
+        left: 0px;
+        width: 100%;
+        background-color:rgb(37, 27, 2);
+        color: aliceblue;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 10px 30px 10px;
+    }
+    details::before{
+        content: "";
+        display: block;      
+        clear: both;
+    }
+    details{
+        margin-top: 5px;
+    }
+    summary{
+        border: 3px solid chocolate;
+        padding-left: 30px;
+        background-color:chocolate;
+        border-radius: 30px;
+    }
+    #chtitle{
+        font-size: 2em;
+        margin-top: 5px;
+        padding:30px;
+        background-color:chocolate;
+        border-radius: 30px;
+        border: 3px solid white;
+    }
+    .ch{       
+        
+        padding: 10px;
+        color: antiquewhite;
+        
+    }
+    .me{
+        background-color: darkorange ;
+        border-radius: 30px; 
+        width: 200px;
+        height: 150px;
+        margin: 8px;
+        color: aliceblue;        
+        line-height: normal;
+        text-align: center;
+        box-shadow: 5px 10px 2px rgb(63, 36, 3);
+    }
+    .me:hover{
+        position:relative;
+        top:9px;
+        box-shadow: 5px 1px 2px rgb(63, 36, 3);
+
+
+    }
+    
+    .chb{
+        position: absolute;
+        left: 0px;
+        border-radius: 30px 30px 0px 0px;
+        background-color: rgb(102, 57, 2) ;
+        width: 200px;
+        margin: 0px;
+        
+
+    }
+    .chc{
+        
+        position: absolute;
+        top: 35px;
+        width: 200px;
+        left: 0px;
+        text-align: center;
+        margin: 0px;
+    }
+    .sumy:hover{
+        border:3px solid  rgb(214, 214, 214) ;
+    }
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper" >
+            <div class="sidebar-nav">
+                <div class="ch">行動商務與系統設計</div>
+           
+                <div class="container-fluid" >
+                    <div class="row" >
+                        <a href="index.html"><div class="col-sm-3 me"><div class="chb">第1章</div><div class="chc">行動商務與<br>系統設計</div></div></a>
+                        <a href="ch.html"><div class="col-sm-3 me"><div class="chb">第2章</div><div class="chc">playground to play swift</div></div> </a>
+                        <a href="ch2.html"><div class="col-sm-3 me"><div class="chb">第3章</div><div class="chc">create a project</div></div></a>
+                        <a href="ch3.html"><div class="col-sm-3 me"><div class="chb">第4章</div><div class="chc">使用UItableview<br>建立表格</div></div></a>
+                        <a href="ch4.html"><div class="col-sm-3 me"><div class="chb">第5章</div><div class="chc">使用Prototype<br>自訂表格視圖</div></div></a>
+                        <a href="ch5.html"><div class="col-sm-3 me"><div class="chb">第6章</div><div class="chc">表格選取和UIAlertController</div></div></a>
+                        <a href="ch6.html"><div class="col-sm-3 me"><div class="chb">第7章</div><div class="chc">表格列、<br>自訂動作按鈕</div></div></a>
+                        <a href="ch7.html"><div class="col-sm-3 me"><div class="chb">第8章</div><div class="chc">Json檔的讀取和使用</div></div></a>
+                        <a href="ch8.html"><div class="col-sm-3 me"><div class="chb">第9章</div><div class="chc">樣板Tabbar的使用和登入畫面</div></div></a>             
+                        <a href="ch20.html"><div class="col-sm-3 me"><div class="chb">第10章</div><div class="chc">手勢的使用</div></div></a>
+                        <a href="ch22.html"><div class="col-sm-3 me"><div class="chb">第11章</div><div class="chc">地圖的使用</div></div></a>            
+                        <a href="char.html"><div class="col-sm-3 me"><div class="chb">第12章</div><div class="chc">iOS的AR表格列</div> </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-content-wrapper1">
+            <h1 id="chtitle">Chapter 2 建立新專案</h1>
+            <div class="container-fluid" >
+                <div class="row" style="background-color: chocolate;
+                border-radius: 30px; border: 3px solid white;">
+                    
+                    <details class="col-md-6" >
+                        <summary><span style="font-size:1.2em;">章節描述：</span></summary>
+                        <div>這個單元會建立一個App，<br>一開啟會有一個歡迎畫面，幾秒之後，歡迎畫面消失<br>
+                            出現操作畫面，中間一個按鈕，<br>按下去出現一個Alert提示視窗，上面顯示 hello world
+                        </div>
+                    </details>
+                    <details class="col-md-6" >
+                        <summary class=""><span style="font-size:1.2em;">學習目標</span></summary>
+                        <div >
+                            <ol>
+                                <li >學會建立專案</li>
+                                <li >學會Xcode的介面和基礎操作</li>
+                                <li>學會將在view上面的元件連結到程式碼中的變數和事件處理程序</li>
+                                <li>學會使用constraints固定view裡面元件，不會因為手機尺寸不同或手機橫放造成跑版</li>
+                                <li>學會預設有兩種storyboard和他們的用處以及設定app起始畫面</li>
+                            </ol>
+                        </div>
+                    </details>
+                
+                </div>
+            </div>
+
+
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">1.建立一個只包含一個手機畫面(View)的新專案</span></summary>
+                    <h2 id="no1">1.建立一個只包含一個手機畫面(View)的新專案</h2>
+                    <div class="container-fluid">
+                    <div class="row">
+                        <figure class="col-xl-4">
+                            <img src="images/21.png" alt="" />
+                            <figcaption>1 點選 file/new/project</figcaption>  
+                        </figure>
+                        <figure class="col-xl-4">
+                            <img src="images/22.png" alt="" />
+                            <figcaption>2 選擇 Single View Appication，這是只含一個View的新專案</figcaption>  
+                        </figure>
+                        <figure class="col-xl-4">
+                            <img src="images/23.png" alt="" />
+                            <figcaption>3 給專案名稱<br>選擇使用語言<br>不用core data</figcaption>  
+                        </figure>
+                        <figure class="col-xl-4">
+                            <img src="images/24.png" alt="" />
+                            <figcaption>4 儲存位置，直接選預設的</figcaption>  
+                        </figure>
+                        <figure class="col-xl-4">
+                            <img src="images/24.png" alt="" />
+                            <figcaption>5 完成後畫面</figcaption>  
+                        </figure>
+                    </div>
+                    </div>
+                        
+                </details>
+            <details>       
+                <summary class="sumy"><span style="font-size:1.2em;">2 熟悉面板各個部位和操作</span></summary>
+                <h2 id="no2">2 熟悉面板各個部位和操作</h2>
+                <p><img src="images/25.png" alt="" width="868" height="695" /></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><img src="images/26.png" alt="" width="668" height="270" /></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><img src="images/27.png" alt="" width="939" height="692" /></p>
+                <p>最右邊的面板是「工具區（Utility Area）」，這個地方顯示了檔案的屬性，並且讓你能夠使用「迅速協助（Quick help）」功能。如果你的Xcode沒有顯示這個區塊，你可以點選工具列的最右邊按鈕來開啟它（如下圖所示）。視窗選擇區中間的檢視按鈕預設是沒有被選取的，當你點選這個按鈕，Xcode會在「編輯區」下方顯示「除錯區（Debug Area）」。「除錯區」如名稱所示，是用來顯示除錯訊息，我們在之後的章節將會談到。此刻你如果不太了解這個區塊的用途，也毋需擔心。</p>
+                <p><img src="http://www.appcoda.com.tw/wp-content/uploads/2015/12/helloworld-9-1.png" alt="顯示／隱藏工作區的內容區塊" width="681" height="357"/></p>
+                <p>&nbsp;</p>
+                <p>可利用內建的模擬器（Simulator）來執行你的App，這可以讓你了解如何在Xcode建立與測試App。在Xcode工具列，你可以見到「執行（Run）」按鈕，當你按下「Run」按鈕，Xcode會自動建立App並且在所選定的模擬器上運行。模擬器預設為iPhone 6。假如你點選了iPhone 6按鈕，此時你會看到可選用的模擬器清單，如iPhone 4s與iPhone 6 Plus，由於我們要建立的是iPhone App，因此選擇iPhone 6作為模擬器。</p>
+                <p><img src="http://www.appcoda.com.tw/wp-content/uploads/2015/12/helloworld-10-1.png" alt="Xcode上的執行與停止按鈕" width="760" height="321"/></p>
+                <p>&nbsp;</p>
+                <hr>
+            </details>       
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">3 會使用按鈕 包括寫一個@IBAction的方法 和按鈕串起來作</span></summary>
+                <h2 id="no3"></h2>
+                <p><img src="images/29.png" alt="" width="498" height="580" /></p>
+                <p>&nbsp;</p>
+                <p>將按鈕加上程式碼</p>
+                <p><img src="images/2a.png" alt="" width="865" height="405" /></p>
+                <p>&nbsp;</p>
+                <XMP> 
+                @IBAction func showMessage() {
+                    let alertController = UIAlertController(title:"Welcome to My First App", message: "Hello World", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                </XMP>
+                <p>@IBAction func showMessage() {</p>
+                <p>建構子<br />
+                let alertController = UIAlertController(title: &quot;Welcome to My First App&quot;, message: &quot;Hello World&quot;, preferredStyle: UIAlertControllerStyle.alert)</p>
+                <p>加上按鈕型態<br />
+                alertController<span class="rty">.addAction</span>(UIAlertAction(title: &quot;OK&quot;, style: UIAlertActionStyle.default, handler: nil))</p>
+                <p>顯示按鈕<br />
+                self.<span class="rty">presen</span>t(alertController, animated: true, completion: nil)<br />
+                }</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>使用者介面與程式連結</p>
+                <p><img src="images/2b.png" alt="" width="352" height="628" /></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><img src="images/2c.png" alt="" width="355" height="634" /></p>
+                <hr>
+            </details>          
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">4 如何使用constraints固定元件的位置和大小</span></summary>
+                <h2 id="no4">4 如何使用constraints固定元件的位置和大小</h2>
+                
+                <p>執行專案試試看</p>
+                <p>如果發現看不到按鈕</p>
+                <p>那是因為按紐位置並沒有指定到與手機邊框相對的位置 所以他在你看不到的地方</p>
+                <p>可以試試看下面定位按鈕的方式</p>
+                <p><img src="images/2d.png" alt="" width="486" height="723" /></p>
+                <p>&nbsp;</p>
+                <p><img src="images/2e.png" alt="" width="591" height="711" /></p>
+                <p>&nbsp;</p>
+                <p><img src="images/2f.png" alt="" width="735" height="766" /></p>
+                <p>再執行看看 應該可以動了</p>
+                <hr>
+            </details>          
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">5 如何設定APP開啟畫面</span></summary>
+                <h2 id="no5">5 如何設定APP開啟畫面</h2>
+                <p>啟動畫面 APP在啟動時會有一個暫時畫面</p>
+                <p>先挑一張圖 加到專案</p>
+                <p>&nbsp;</p>
+                <p><img src="images/2g.png" alt="" width="789" height="700" /></p>
+                <p>&nbsp;</p>
+                <p><img src="images/2h.png" alt="" width="1655" height="788" /></p>
+                <p>接下來把圖框拉滿整個手機畫面 執行看看 出現</p>
+                <p><img src="images/2i.png" alt="" width="583" height="933" /></p>
+                <p>&nbsp;</p>
+                <p>發現圖跑掉了</p>
+                <p>所以同樣的必須調整一下 固定位置以及固定大小 自己試試看 還有改變一下按鈕的顏色</p>
+                <p><img src="images/backg.png" alt="" width="291" height="415"></p>
+                <p>完成後 想想下面的問題</p>
+
+                <hr>     
+            </details> 
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">練習1</span></summary>
+                <h2 id="p1">練習1</h2>
+                <p>寫一個程式 如下 (手機橫放畫面也不可以跑掉)</p>
+                <p><img src="images/p2d.png" alt="" width="365" height="496"></p>
+                <p>讓元件和程式產生關連</p>
+                <p><img src="images/sde.png" alt="" width="650" height="263"></p>
+                <p>上面叫出assistant editor</p>
+                <p>下面讓Label元件和程式產生關聯</p>
+                <p><img src="images/ascvb.png" alt="" width="950" height="493"></p>
+                <p>讓button和程式產生關聯</p>
+                <p><img src="images/untisdftled.png" alt="" width="832" height="371"></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <hr>   
+            </details>   
+            <details>
+                <summary class="sumy"><span style="font-size:1.2em;">練習2</span></summary>
+                <h2 id="p2">練習2</h2>
+                <p>寫一個程式 如下 (手機橫放畫面也不可以跑掉)</p>
+                <p><img src="images/p3.png" alt="" width="363" height="438"></p>
+            </details>               
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
