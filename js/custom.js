@@ -7,7 +7,7 @@
             document.getElementById('impadw').classList.add('padw');
         }
         if  (document.body.clientWidth <750){
-            document.getElementById('banim').src="images/banner02.png";         
+            document.getElementById('banim').src="images/Banner02.png";         
        }
       }else {
         document.getElementById('van').classList.remove('nav-van');
@@ -16,16 +16,16 @@
           document.getElementById('impadw').classList.remove('padw');
         }
         if  (document.body.clientWidth >=750){
-            document.getElementById('banim').src="images/banner03.png";         
+            document.getElementById('banim').src="images/Banner03.png";         
         }
       }
     }
 
     window.onresize = () => {
       if  (document.body.clientWidth <750){
-        document.getElementById('banim').src="images/banner02.png";         
+        document.getElementById('banim').src="images/Banner02.png";         
       }else{
-        document.getElementById('banim').src="images/banner03.png";
+        document.getElementById('banim').src="images/Banner03.png";
       }
       if (window.scrollY >10 || document.body.clientWidth <990) {
         document.getElementById('van').classList.remove('nav-nobg');
@@ -41,7 +41,7 @@
         }        
       }
     }
-/*
+
     window.onload = () => {
       if (window.scrollY >10 || document.body.clientWidth <990) {
         document.getElementById('van').classList.remove('nav-nobg');
@@ -50,7 +50,7 @@
             document.getElementById('impadw').classList.add('padw');
         }
         if  (document.body.clientWidth <750){
-            document.getElementById('banim').src="images/banner02.png";         
+            document.getElementById('banim').src="images/Banner02.png";         
        }
       }else {
         document.getElementById('van').classList.remove('nav-van');
@@ -59,8 +59,8 @@
           document.getElementById('impadw').classList.remove('padw');
         }
         if  (document.body.clientWidth >=750){
-            document.getElementById('banim').src="images/banner03.png";         
+            document.getElementById('banim').src="images/Banner03.png";         
         }
       }
     }
-*/
+
