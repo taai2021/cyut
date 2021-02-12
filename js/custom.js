@@ -41,7 +41,7 @@
         }        
       }
     }
-
+/*
     window.onload = () => {
       if (window.scrollY >10 || document.body.clientWidth <990) {
         document.getElementById('van').classList.remove('nav-nobg');
@@ -63,3 +63,4 @@
         }
       }
     }
+*/
