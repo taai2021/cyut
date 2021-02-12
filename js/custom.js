@@ -1,6 +1,5 @@
 
     window.onscroll = () => {
-        //document.getElementById("taai").innerHTML=document.body.clientWidth;
       if (window.scrollY >10 || document.body.clientWidth <990) {
         document.getElementById('van').classList.remove('nav-nobg');
         document.getElementById('van').classList.add('nav-van');   
@@ -23,7 +22,6 @@
     }
 
     window.onresize = () => {
-       // document.getElementById("taai").innerHTML=document.body.clientWidth;
       if  (document.body.clientWidth <750){
         document.getElementById('banim').src="images/Banner02.png";         
       }else{
@@ -45,7 +43,6 @@
     }
 
     window.onload = () => {
-        //document.getElementById("taai").innerHTML=document.body.clientWidth;
       if (window.scrollY >10 || document.body.clientWidth <990) {
         document.getElementById('van').classList.remove('nav-nobg');
         document.getElementById('van').classList.add('nav-van');   
