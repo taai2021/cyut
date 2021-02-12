@@ -22,6 +22,7 @@
     }
 
     window.onresize = () => {
+        document.getElementById("taai").innerHTML=document.body.clientWidth;
       if  (document.body.clientWidth <750){
         document.getElementById('banim').src="images/Banner02.png";         
       }else{
