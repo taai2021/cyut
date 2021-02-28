@@ -1,6 +1,7 @@
-#tml{
+
+.tml{
   border: 2px solid rgb(230,230,230);
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   padding: 0;
   margin: 0;
 }
@@ -77,3 +78,19 @@ footer .btn:hover, footer .btn:focus, footer .btn.active {background: #4b92dc;co
   transition: all 250ms ease-in-out 0s;
 }
 
+input.MyButton {
+  width: 300px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 150%;
+  background: #3366cc;
+  color: #fff;
+  border: 1px solid #3366cc;
+  border-radius: 10px;
+}
+input.MyButton:hover {
+  color: #ffff00;
+  background: #000;
+  border: 1px solid #fff;
+}
